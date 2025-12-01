@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SheSafe - Authentication</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: #ffeb3b; /* Yellow background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .auth-container {
+      background: #ffffff;
+      width: 350px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .auth-input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: white;
+      color: black;
+      font-weight: 600;
+    }
+
+    .auth-input::placeholder {
+      color: #555;
+      font-weight: 500;
+    }
+
+    .auth-btn {
+      margin-top: 15px;
+      width: 95%;
+      padding: 14px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .auth-btn:hover {
+      background: #333;
+    }
+
+    p {
+      margin-top: 10px;
+      color: #000;
+      font-size: 14px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="auth-container">
+    <h2>Create an Account</h2>
+
+    <input type="text" class="auth-input" placeholder="Full Name" required />
+    <input type="tel" class="auth-input" placeholder="Phone Number" required />
+    <input type="text" class="auth-input" placeholder="Username" required />
+    <input type="password" class="auth-input" placeholder="Password" required />
+
+    <!-- Redirect added here -->
+    <button class="auth-btn" onclick="window.location.href='map.html'">
+      Sign Up
+    </button>
+
+    <p>Already have an account? <a href="#">Sign In</a></p>
+  </div>
+
+</body>
+</html>
