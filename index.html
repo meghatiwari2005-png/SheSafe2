@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>She Safe - Women Safety Awareness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Dark mode toggle functionality
+      function toggleTheme() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </head>
+  <body class="m-0 p-0 bg-[#faf7f2] dark:bg-gray-900 transition duration-500">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-4 left-8 z-20 w-[60%] bg-white/30 dark:bg-gray-800/30 backdrop-blur-md rounded-full shadow-md px-6 py-3 flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4 font-medium">
+        <a href="#" class="text-black dark:text-white hover:text-blue-600 transition">Home</a>
+        <a href="auth.html" class="text-black dark:text-white hover:text-blue-600 transition">Sign In</a>
+        <a href="auth.html" class="text-black dark:text-white hover:text-blue-600 transition">Sign Up</a>
+      </div>
+      <button
+        onclick="toggleTheme()"
+        class="text-black dark:text-white border border-black/20 dark:border-white/40 px-3 py-1.5 rounded-full hover:bg-blue-600 hover:text-white transition"
+      >
+        Toggle Theme
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative flex items-center justify-start h-[100vh] w-full bg-center bg-contain bg-no-repeat transition-colors duration-500"
+      style="background-image: url('image.png');"
+    >
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent dark:from-gray-900/70 dark:via-gray-800/40 dark:to-transparent"
+      ></div>
+
+      <!-- Button Container -->
+      <div class="relative z-10 px-10 sm:px-16 md:px-20 lg:px-28 max-w-xl">
+        <button
+          onclick="window.location.href='auth.html'"
+          class="translate-y-[250px] translate-x-32 mt-8 bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition"
+        >
+          Let's Get Started
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
